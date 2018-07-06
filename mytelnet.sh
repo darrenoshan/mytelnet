@@ -7,4 +7,4 @@ if [ -z "${port}" ]; then
 port=23
 fi
 
-mate-terminal --tab -e -t "${address}"  -e "telnet ${address} ${port}" --hide-menubar
+mate-terminal --tab -t "${address}"  -e "telnet ${address} ${port}" --hide-menubar
