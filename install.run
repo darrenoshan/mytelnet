@@ -31,4 +31,6 @@ mkdir -p /usr/bin/mytelnet/
 cat ./mytelnet.sh >  /usr/bin/mytelnet/mytelnet.sh
 chmod 755 /usr/bin/mytelnet/mytelnet.sh
 
-xdg-mime default telnet.desktop x-scheme-handler/telnet
+sudo -u `who | head -n 1 | cut -d " " -f 1` xdg-mime default telnet.desktop x-scheme-handler/telnet
+
+
